@@ -117,14 +117,23 @@
     <!-- About Section -->
     <section class="section about" id="about">
         <div class="container relative-about-container">
-            <div class="about-image-hero fade-in">
-                <img src="./assets/images/new-doctor.png" alt="Lead Specialist Doctor">
-                <div class="about-image-decoration"></div>
+            <div class="about-image-hero fade-in before-after-slider">
+                <!-- Yellowed Base Image -->
+                <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80" alt="Teeth Before" class="before-img">
+                <!-- White Clipped Image on top -->
+                <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=800&q=80" alt="Teeth After" class="after-img" id="ba-after">
+                
+                <input type="range" min="0" max="100" value="50" class="slider-input" id="teeth-slider">
+                <div class="slider-line" id="slider-line">
+                    <div class="slider-button"><i class="fa-solid fa-arrows-left-right"></i></div>
+                </div>
+                <div class="slider-label label-before">Before</div>
+                <div class="slider-label label-after">After</div>
             </div>
             <div class="about-text-card fade-in" style="transition-delay: 0.2s;">
-                <h2>Meet Your Leading <br>Smile Expert</h2>
-                <p>Located in the heart of Ashok Nagar, Jagtial, Sri Venkataramna Dental Hospital is dedicated to providing comprehensive and compassionate oral care. We have built a reputation on unbreakable trust, deep medical knowledge, and unmatched patient comfort.</p>
-                <p>Every procedure is explained in detail prior to execution, ensuring you feel completely safe and confident in your treatment plan.</p>
+                <h2>Experience Premium <br>Teeth Whitening</h2>
+                <p>Located in the heart of Ashok Nagar, Jagtial, Sri Venkataramna Dental Hospital is dedicated to providing comprehensive and compassionate oral care. See the real difference in your smile with our advanced cosmetic dentistry.</p>
+                <p>Slide the image to see an example of how we can instantly transform stained teeth into a glowing, brilliant white perfect smile.</p>
                 
                 <div class="stats-grid">
                     <div class="stat-item">

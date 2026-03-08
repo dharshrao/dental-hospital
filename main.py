@@ -47,3 +47,16 @@ appearOnScroll = window.IntersectionObserver.new(create_proxy(handle_intersect),
 
 for fader in faders:
     appearOnScroll.observe(fader)
+
+# Before/After Slider Logic
+teeth_slider = document.getElementById("teeth-slider")
+ba_after = document.getElementById("ba-after")
+slider_line = document.getElementById("slider-line")
+
+def handle_slider(event):
+    val = str(teeth_slider.value) + "%"
+    ba_after.style.clipPath = f"polygon(0 0, {val} 0, {val} 100%, 0 100%)"
+    slider_line.style.left = val
+
+if teeth_slider:
+    teeth_slider.addEventListener("input", create_proxy(handle_slider))
